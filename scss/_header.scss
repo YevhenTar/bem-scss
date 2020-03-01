@@ -1,0 +1,64 @@
+.main-header {
+  background-color: $second-color;
+  min-height: 503px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../image/leaf-aqua.png), url(../image/small-leaf-purple.png), 
+  url(../image/leaf-orange.png), url(../image/big-leaf-orange.png),
+  url(../image/big-leaf.png), url(../image/middle-leaf.png);
+  background-position: left -148.7px top 21px, left 656.17px top 87.5px, left 1103.5px top 303.5px,
+  right -83.5px top 24.5px, left 282.37px bottom 164.5px, left -253px top 292.5px; 
+
+  &__headline{
+    color: $first-color;
+    text-align: center; 
+    font-family: $first-font;
+    margin-top: 210px;
+    margin-bottom: 119px;
+    font-size: 80px;
+    line-height: 87px;
+  }
+  &__slider{
+    position: absolute;
+    top: 416.17px;
+    right: 106.47px;
+  }
+  &__leaf{
+    position: absolute;
+    left: 383.53px;
+    top: 437.5px;
+  }
+}
+
+.header-container {
+  display: flex; 
+  flex-direction:row;
+  padding: 31.5px 134.5px 0 115.5px;
+  &__list {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    margin-left:auto;
+    width:512px;
+    padding-left: 0;
+  }
+  &__item {
+    list-style-type: none;
+    width: 87px;
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: $second-font;
+    font-weight: $second-weight;
+    font-size: 18px;
+    color: $first-color;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  &__item--big-block{
+    width: 124px;
+  }
+}
